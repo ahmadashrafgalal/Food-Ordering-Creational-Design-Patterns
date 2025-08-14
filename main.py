@@ -3,6 +3,7 @@ from Orders import OrderManager
 from PaymentFactory import PaymentFactory, CashOnDeliveryPayment, PayPalPayment, CreditCardPayment
 from MealPrototype import Meal, MealRegistry
 
+
 PaymentFactory.add_payment("credit", CreditCardPayment)
 PaymentFactory.add_payment("paypal", PayPalPayment)
 PaymentFactory.add_payment("cash", CashOnDeliveryPayment)
@@ -16,7 +17,7 @@ meal_registry.register_meal("sushi_combo", Meal("Sushi Combo", ["Sushi", "Green 
 
 while True:
     
-    print("""--- Online Food Ordering ---
+    print("""\n--- Online Food Ordering ---
     1. Build custom burger
     2. Order pre-made meal
     3. Show all orders
